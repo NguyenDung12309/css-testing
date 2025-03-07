@@ -1,0 +1,10 @@
+@import './tailwind.css';
+
+* {
+  box-sizing: border-box;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
