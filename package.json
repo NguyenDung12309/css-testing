@@ -6,10 +6,16 @@
   "author": "dungnn <trandung070899@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "npx @tailwindcss/cli -i public/styles/index.css -o public/styles/bundle.css --watch --minify"
+    "watch:css": "tailwindcss -i public/styles/index.css -o public/styles/bundle.css --watch --minify",
+    "watch:js": "esbuild public/js/index.js --outfile=public/js/bundle.js --minify --watch",
+    "start": "concurrently \"yarn watch:css\" \"yarn watch:js\""
   },
   "devDependencies": {
-    "@tailwindcss/cli": "^4.0.11",
-    "tailwindcss": "^4.0.11"
-  }
+    "autoprefixer": "^10.4.20",
+    "concurrently": "^9.1.2",
+    "esbuild": "^0.25.1",
+    "postcss": "^8.5.3",
+    "tailwindcss": "3"
+  },
+  "dependencies": {}
 }

@@ -4,65 +4,294 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="fun arenacheb">
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link href="https://fonts.cdnfonts.com/css/big-shoulders-text" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/big-shoulders-text&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../public/styles/bundle.css">
 </head>
 
-<body
-    class="bg-eerie-black font-grotesk bg-no-repeat bg-[center_left_67px] bg-contain bg-[url('../images/FloatingLogo.png')] relative">
-    <header class="flex justify-between px-5 sm:px-[46px] pt-4 items-center fixed z-10 w-full">
+<body class="text-light-silver bg-eerie-black font-grotesk relative">
+    <header id="header"
+        class="bg-transparent [&.active]:bg-black border-b border-solid border-transparent [&.active]:border-white transition-all duration-500 flex justify-between px-5 sm:px-[46px] py-4 items-center fixed z-50 w-full">
         <a href="#">
-            <img class="h-6 md:h-12" src="../public/images/Logo.png" alt="logo">
+            <img loading="lazy" class="h-6 md:h-12" src="../public/images/logo.webp" alt="logo">
         </a>
         <div class="flex gap-4 md:gap-8 items-center">
-            <img class="h-[14px] md:h-7 w-[14px] md:w-7" src="../public/icons/global.png" alt="global" />
-            <img class="h-6 md:h-12 cursor-pointer" src="../public/icons/menu.png" alt="menu" />
+            <button
+                class="hover:bg-white bg-transparent rounded-full w-[48px] h-[48px] flex items-center justify-center duration-300">
+                <img loading="lazy" class="h-[14px] md:h-7 w-[14px] md:w-7 filter-black duration-300"
+                    src="../public/icons/global.svg" alt="global" />
+            </button>
+            <button
+                class="hover:bg-white bg-eerie-black rounded-full w-[48px] h-[48px] flex items-center justify-center duration-300">
+                <img loading="lazy" class="md:h-12 cursor-pointer w-[19px] h-4 filter-black duration-300"
+                    src="../public/icons/hamburger.svg" alt="menu" />
+            </button>
         </div>
     </header>
 
     <main>
-        <section id="fv" class="relative mb-[100px]">
+
+        <!-- Banner -->
+        <section id="fv" class="relative mb-[20px] md:mb-[100px]">
             <div class="swiper w-full">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <img src="../public/images/Go-Karts.png" />
+                        <img alt="go karts" src="../public/images/go-karts.webp" />
                     </div>
                     <div class="swiper-slide">
-                        <img src="../public/images/JumpArena.png" />
+                        <img alt="jump arena" src="../public/images/jump-arena.webp" />
                     </div>
                     <div class="swiper-slide">
-                        <img src="../public/images/Virtual-Reality.png" />
+                        <img alt="laser shooting" src="../public/images/laser-shooting.webp" />
                     </div>
                     <div class="swiper-slide">
-                        <img src="../public/images/Multiball.png" />
+                        <img alt="multi ball" src="../public/images/multiball.webp" />
                     </div>
                     <div class="swiper-slide">
-                        <img src="../public/images/LaserShooting.png" />
+                        <img alt="virtual realita" src="../public/images/virtual-realita.webp" />
                     </div>
                 </div>
             </div>
+            <a href="#"
+                class="block w-[40%] lg:w-[265px] h-[65px] lg:h-[210px] absolute bottom-0 left-1/2 transform -translate-x-1/2 overflow-visible z-10 flex items-center justify-center">
+                <img alt="reserve now" class="lg:!max-w-none lg:!max-h-none object-contain"
+                    src="../public/images/reserve-now.webp" />
+            </a>
         </section>
 
-        <section id="registration" class="flex justify-between w-[1280px] gap-[80px] mx-auto">
-            <div>
-                <h2 class="font-shoulder text-[72px] font-bold text-light-silver">REGISTRATION</h2>
-                <p class="text-light-silver">For organizational and security reasons, every visitor to the FUN arena<br/> Cheb must register before entering the attraction. At the reception, your<br/> registration will be completed and you will receive a loyalty card which<br/> you will use for our services.</p>
-            </div>
-            <div class="flex-1">
-                <h2 class="font-shoulder text-[72px] font-bold text-light-silver">REGISTRATION</h2>
-                <p class="text-light-silver">For organizational and security reasons, every visitor to the FUN arena Cheb must register before entering the attraction. At the reception, your registration will be completed and you will receive a loyalty card which you will use for our services.</p>
-            </div>
-        </section>
+        <div class="w-full max-w-[1320px] mx-auto px-[20px] flex flex-col gap-[40px] md:gap-[100px]">
+            <!-- Registration -->
+            <section id="registration" class="pt-0 md:pt-[100px] flex flex-wrap justify-between gap-8">
+                <div class="mx-auto w-full md:w-[566px] relative">
+                    <h2 class="font-shoulder text-[36px] md:text-[72px] mb-4 md:mb-8 font-bold">REGISTRATION</h2>
+                    <p class="text-[14px] md:text-[16px] leading-normal">For organizational and security reasons, every
+                        visitor to the FUN arena Cheb must register before
+                        entering the attraction. At the reception, your registration will be completed and you will
+                        receive
+                        a loyalty card which you will use for our services.</p>
+                    <div class="absolute mt-[27px] left-0 md:-left-[45px] z-[-1]">
+                        <img loading="lazy" src="../public/images/floating-logo.webp" alt="fun floating logo">
+                    </div>
+                </div>
+                <ul class="mx-auto w-full md:w-[634px] flex flex-col gap-12">
+                    <li
+                        class="relative before:contents[' '] before:absolute before:left-0 before:w-full before:md:w-[642px] before:h-[64px] before:z-[-1] before:bg-no-repeat before:bg-[length:100%_100%] before:md:bg-cover before:bg-[url(../images/subtract.webp)] before:md:bg-[url(../images/counter-1.webp)]">
+                        <div class="md:pl-[100px]">
+                            <h3
+                                class="mb-2 font-bold leading-[64px] relative text-[16px] md:text-[24px] text-center md:text-left">
+                                Choose an Attraction
+                            </h3>
+                            <p class="text-[14px] md:text-base leading-normal">Choose from the attractions of the FUN
+                                arena.</p>
+                        </div>
+                    </li>
+                    <li
+                        class="relative before:contents[' '] before:absolute before:left-0 before:w-full before:md:w-[642px] before:h-[64px] before:z-[-1] before:bg-no-repeat before:bg-[length:100%_100%] before:md:bg-cover before:bg-[url(../images/subtract.webp)] before:md:bg-[url(../images/counter-2.webp)]">
+                        <div class="flex flex-col items-center md:flex-row gap-[15px]">
+                            <div class="md:pl-[100px] w-full md:w-[468px]">
+                                <div class="flex justify-center gap-4 md:justify-between items-center mb-2">
+                                    <h3 class="font-bold leading-[64px] relative text-[16px] md:text-[24px]">
+                                        Register
+                                    </h3>
+                                    <button
+                                        class="bg-crimson hover:bg-red-500 rounded-lg w-[86px] h-[26px] font-bold text-[14px] duration-300">Click
+                                        here</button>
+                                </div>
+                                <p class="text-[14px] md:text-base leading-normal">You can register at the reception or
+                                    by <br /> clicking
+                                    the button above from the comfort of your home.</p>
+                            </div>
+                            <img loading="lazy" class="w-[128px] h-[128px] self-center md:self-end"
+                                src="../public/images/qr-code.webp" alt="qr code" />
+                        </div>
+                    </li>
+                    <li
+                        class="relative before:contents[' '] before:absolute before:left-0 before:w-full before:md:w-[642px] before:h-[64px] before:z-[-1] before:bg-no-repeat before:bg-[length:100%_100%] before:md:bg-cover before:bg-[url(../images/subtract.webp)] before:md:bg-[url(../images/counter-3.webp)]">
+                        <div class="md:pl-[100px] w-full md:w-[534px]">
+                            <h3
+                                class="mb-2 font-bold leading-[64px] relative text-[16px] md:text-[24px] text-center md:text-left">
+                                Have Fun
+                            </h3>
+                            <p class="text-[14px] md:text-base leading-normal">Thank you for your online registrations.
+                                For each purchase you get points, which you can apply to our services and attractions
+                                then. We look forward to you!</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
 
+            <!-- Entertainment -->
+            <section id="entertainment" class="pt-0 md:pt-[100px]">
+                <div class="lg:pl-[233px] mb-12">
+                    <h2 class="font-shoulder text-[36px] md:text-[72px] mb-4 md:mb-8 font-bold">NEW ENTERTAINMENT <br />
+                        CENTRE NEAR CHEB</h2>
+                    <div class="flex flex-wrap justify-between gap-4">
+                        <p class="text-[14px] md:text-[16px] leading-normal">We have been entertaining children and
+                            adults
+                            <br /> in western Bohemia for more than 10 years!
+                        </p>
+                        <a href="#"
+                            class="font-medium text-[14px] md:text-[16px] flex gap-[12px] self-end whitespace-pre items-center hover:text-blue-400 transition-all">
+                            Find more about us
+                            <img loading="lazy" src="../public/icons/arrow-right.svg" alt="arrow-right"
+                                src="arrow right">
+                        </a>
+                    </div>
+                </div>
+                <div class="w-full relative group">
+                    <video id="entertainment__video" loop autoplay muted
+                        class="w-full h-full max-h-[576px] object-cover rounded-3xl">
+                        <source src="../public/video/f1.mp4" type="video/mp4">
+                        Your browser does not support HTML video.
+                    </video>
+                    <button id="play-pause-btn"
+                        class="absolute top-0 left-0 right-0 bottom-0 opacity-0 flex items-center justify-center group-hover:opacity-100 transition-all duration-500">
+                        <img loading="lazy" src="../public/icons/pause.svg" alt="pause" class="w-20 h-20" />
+                    </button>
+                </div>
+            </section>
+
+            <!-- Attractions -->
+            <section id="attraction" class="pt-0 md:pt-[100px]">
+                <div class="mb-12 flex flex-wrap items-center justify-between">
+                    <h2 class="font-shoulder text-[36px] md:text-[72px] font-bold">OUR ATTRACTIONS</h2>
+                    <a href="#"
+                        class="font-medium text-[14px] md:text-[16px] flex gap-6 whitespace-pre items-center hover:text-blue-400 transition-all">
+                        Multiple activities at Fun Arena Cheb
+                        <img loading="lazy" src="../public/icons/arrow-red-blue.svg" alt="arrow-red-blue">
+                    </a>
+                </div>
+                <div class="flex flex-wrap justify-center gap-y-4">
+                    <ul class="flex flex-wrap justify-center gap-3 flex-1">
+                        <li class="relative w-[48%] md:w-fit">
+                            <div data-img_alt="arena jump" data-img_path="../public/images/attraction-1-detail.webp"
+                                data-link="#"
+                                class="accordion-item cursor-pointer bg-[url(../images/attraction-1.webp)] [&.active]:bg-[url('../images/attraction-1-active.webp')] [&.active]:w-full [&.active]:md:w-[500px] [&.active]:h-[32px] [&.active]:md:h-[64px] transition-all duration-500 bg-no-repeat bg-contain md:bg-cover w-full md:w-[460px] h-[32px] md:h-[64px]">
+                            </div>
+                        </li>
+                        <li class="relative w-[48%] md:w-fit">
+                            <div data-img_alt="arena jump" data-img_path="../public/images/attraction-1-detail.webp"
+                                data-link="#"
+                                class="active accordion-item cursor-pointer bg-[url(../images/attraction-2.webp)] [&.active]:bg-[url('../images/attraction-2-active.webp')] [&.active]:w-full [&.active]:md:w-[500px] [&.active]:h-[32px] [&.active]:md:h-[64px] transition-all duration-500 bg-no-repeat bg-contain md:bg-cover w-full md:w-[460px] h-[32px] md:h-[64px]">
+                            </div>
+                        </li>
+                        <li class="relative w-[48%] md:w-fit">
+                            <div data-img_alt="arena jump" data-img_path="../public/images/attraction-1-detail.webp"
+                                data-link="#"
+                                class="accordion-item cursor-pointer bg-[url(../images/attraction-3.webp)] [&.active]:bg-[url('../images/attraction-3-active.webp')] [&.active]:w-full [&.active]:md:w-[500px] [&.active]:h-[32px] [&.active]:md:h-[64px] transition-all duration-500 bg-no-repeat bg-contain md:bg-cover w-full md:w-[460px] h-[32px] md:h-[64px]">
+                            </div>
+                        </li>
+                        <li class="relative w-[48%] md:w-fit">
+                            <div data-img_alt="arena jump" data-img_path="../public/images/attraction-1-detail.webp"
+                                data-link="#"
+                                class="accordion-item cursor-pointer bg-[url(../images/attraction-4.webp)] [&.active]:bg-[url('../images/attraction-4-active.webp')] [&.active]:w-full [&.active]:md:w-[500px] [&.active]:h-[32px] [&.active]:md:h-[64px] transition-all duration-500 bg-no-repeat bg-contain md:bg-cover w-full md:w-[460px] h-[32px] md:h-[64px]">
+                            </div>
+                        </li>
+                        <li class="relative w-[48%] md:w-fit">
+                            <div data-img_alt="arena jump" data-img_path="../public/images/attraction-1-detail.webp"
+                                data-link="#"
+                                class="accordion-item cursor-pointer bg-[url(../images/attraction-5.webp)] [&.active]:bg-[url('../images/attraction-5-active.webp')] [&.active]:w-full [&.active]:md:w-[500px] [&.active]:h-[32px] [&.active]:md:h-[64px] transition-all duration-500 bg-no-repeat bg-contain md:bg-cover w-full md:w-[460px] h-[32px] md:h-[64px]">
+                            </div>
+                        </li>
+                        <li class="relative w-[48%] md:w-fit">
+                            <div data-img_alt="arena jump" data-img_path="../public/images/attraction-1-detail.webp"
+                                data-link="#"
+                                class="accordion-item cursor-pointer bg-[url(../images/attraction-6.webp)] [&.active]:bg-[url('../images/attraction-6-active.webp')] [&.active]:w-full [&.active]:md:w-[500px] [&.active]:h-[32px] [&.active]:md:h-[64px] transition-all duration-500 bg-no-repeat bg-contain md:bg-cover w-full md:w-[460px] h-[32px] md:h-[64px]">
+                            </div>
+                        </li>
+                    </ul>
+                    <div id="attraction__detail" class="w-[780px]">
+                        <a href="" class="transition-all duration-500">
+                            <img loading="lazy" src="">
+                        </a>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- Gift -->
+            <section id="gift" class="pt-0 md:pt-[100px]">
+                <div
+                    class="relative flex flex-wrap gap-3 items-center justify-between max-w-[1000px] w-full mx-auto bg-crimson py-[24px] px-[24px] xl:pl-[227px] xl:pr-[105px] rounded-3xl">
+                    <div class="font-medium">
+                        <h3 class="text-[32px]">Make somebody happy with a gift voucher</h3>
+                        <p class="text-[16px]">The voucher is valid for all services. Unforgettable experiences for
+                            children and adults!</p>
+                    </div>
+                    <img loading="lazy"
+                        class="hidden xl:block animate-ringing absolute w-[220px] h-[220px] xl:-top-[30%] transform xl:-translate-y-[15%] left-0"
+                        src="../public/images/gift.webp" alt="gift voucher">
+                    <button
+                        class="xl:absolute xl:right-0 xl:top-1/2 xl:transform xl:-translate-y-1/2 xl:translate-x-1/2 text-eerie-black bg-white rounded-xl h-[44px] px-[24px] text-[16px] font-bold">Buy
+                        Now</button>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer class="py-[40px] md:py-[80px] mb-[38px]">
+                <div class="flex items-center flex-wrap gap-6 justify-center md:justify-between mb-6">
+                    <a href="#">
+                        <img loading="lazy" class="max-w-[200px]" src="../public/images/footer-logo.webp" alt="logo">
+                    </a>
+                    <p class="max-w-[300px] text-[14px]">New entertainment centre FUN arena Cheb. You will find
+                        entertainment and sports activities for
+                        children and adults here.</p>
+                    <p class="flex flex-col gap-[10px] md:text-right text-[14px] text-white">Potočiště 3, 350 02 Odrava
+                        <a class="group leading-normal" href="mailto:fun@funarenacheb.cz">
+                            <span
+                                class="border-b border-solid border-transparent group-hover:border-white transition-all">
+                                fun@funarenacheb.cz
+                            </span>
+                        </a>
+                        <a class="group" href="tel:420737878891">
+                            <span
+                                class="border-b border-solid border-transparent group-hover:border-white transition-all">
+                                +420737878891
+                            </span>
+                        </a>
+                    </p>
+                </div>
+                <div class="flex justify-center md:justify-between items-center flex-wrap gap-6">
+                    <ul class="bg-[#292929] rounded-full px-3 h-[40px] flex items-center gap-3">
+                        <li class="hover:opacity-40 transition-all">
+                            <a href="#">
+                                <img loading="lazy" src="../public/icons/facebook.svg" alt="facebook">
+                            </a>
+                        </li>
+                        <li class="hover:opacity-40 transition-all">
+                            <a href="#">
+                                <img loading="lazy" src="../public/icons/instagram.svg" alt="instagram">
+                            </a>
+                        </li>
+                        <li class="hover:opacity-40 transition-all">
+                            <a href="#">
+                                <img loading="lazy" src="../public/icons/mail.svg" alt="mail">
+                            </a>
+                        </li>
+                        <li class="hover:opacity-40 transition-all">
+                            <a href="#">
+                                <img loading="lazy" src="../public/icons/phone.svg" alt="phone">
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="flex items-center flex-wrap justify-center gap-4 md:gap-12">
+                        <p class="text-[14px]">© 2025 FUN Arena Cheb. All rights Reserved.</p>
+                        <button id="back-to-top" class="hover:opacity-40 transition-all">
+                            <img loading="lazy" src="../public/icons/back-to-top.svg" alt="back to top">
+                        </button>
+                    </div>
+                </div>
+            </footer>
+        </div>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="../public/js/index.js"></script>
+    <script src="../public/js/bundle.js" defer></script>
 </body>
 
 </html>
